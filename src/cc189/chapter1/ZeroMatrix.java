@@ -1,5 +1,5 @@
 package cc189.chapter1;
-import leetcode.Array.l73SetMatrixZeroes.Solution;
+import topics.Array.l73SetMatrixZeroes.Solution;
 public class ZeroMatrix {
     // see leetcode 73
     // space O(1) time O(n)
