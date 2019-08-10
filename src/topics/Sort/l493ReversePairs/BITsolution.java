@@ -1,5 +1,7 @@
 package topics.Sort.l493ReversePairs;
 import java.util.*;
+// first sort the original array
+//
 public class BITsolution {
 
     int[] BIT;
@@ -23,15 +25,17 @@ public class BITsolution {
         BIT = new int[p + 1];
         int cnt = 0;
         for (int i = n - 1; i >= 0; i--) {
+            // find the index of the first element that is larger than the half of the current element
             int index1 = binarySearch(1.0 * nums[i] / 2, 0, p, copy);
             //if all number are negative... the index could be p...
             int index2 = binarySearch(nums[i], 0, p - 1, copy);
+
             cnt += query(index1);
             update(index2 + 1); //need to add 1...
         }
         return cnt;
     }
-
+    // return the number of elements that is smaller than or equal to the element of index i
     private int query(int i) {
         int sum = 0;
         while (i > 0) {
@@ -41,7 +45,7 @@ public class BITsolution {
         }
         return sum;
     }
-
+    // increase the number of element that is greater or equal to the number in index i
     private void update(int i) {
         int n = BIT.length;
         while (i < n) {
