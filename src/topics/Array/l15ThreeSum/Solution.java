@@ -14,6 +14,8 @@ public class Solution {
                 while(lo < hi){
                     if(nums[lo] + nums[hi] == sum){
                         res.add(Arrays.asList(nums[i], nums[lo], nums[hi]));
+
+                        // skip the duplicated results
                         while(lo < hi && nums[lo] == nums[lo + 1]) lo++;
                         while(lo < hi && nums[hi] == nums[hi - 1]) hi--;
                         lo ++;
