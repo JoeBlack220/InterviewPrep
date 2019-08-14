@@ -1,7 +1,7 @@
 package topics.Math.l296BestMeetingPoint;
 import java.util.*;
 public class Solution {
-//     for bigger picture
+// for bigger picture
 // mean minimizes total distance for euclidian distance
 // median minimzes total distance for absolute deviation
 // mode minimizes distance for indicator function
