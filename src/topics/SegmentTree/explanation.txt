@@ -9,3 +9,5 @@ Operations:
   update(index, value) -> O(logn)
   rangeQuery(start, end) -> O(logn + k)
   where k is the number of reported segments
+
+  https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/

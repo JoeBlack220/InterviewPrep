@@ -11,13 +11,13 @@ public class Solution {
             int[] speed = speeds[i];
             if(speed[0] <= time) {
                 BigDecimal timeTaken = new BigDecimal(speed[0] - last[0]);
-                BigDecimal lengthTaken = timeTaken.divide(scale, 30,RoundingMode.CEILING).multiply(new BigDecimal(last[1]));
+                BigDecimal lengthTaken = timeTaken.divide(scale, 20,RoundingMode.HALF_UP).multiply(new BigDecimal(last[1]));
                 res = res.add(lengthTaken);
                 last = speed;
             }
             if(speed[0] > time || i == speeds.length - 1) {
                 BigDecimal timeTaken = new BigDecimal(time - last[0]);
-                BigDecimal lengthTaken = timeTaken.divide(scale,30, RoundingMode.CEILING).multiply(new BigDecimal(last[1]));
+                BigDecimal lengthTaken = timeTaken.divide(scale,20, RoundingMode.HALF_UP).multiply(new BigDecimal(last[1]));
 //                BigDecimal lengthTaken = timeTaken.divide(scale,10, RoundingMode.CEILING);
 //                System.out.println("l:" + lengthTaken.doubleValue());
                 res = res.add(lengthTaken);

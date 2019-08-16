@@ -18,13 +18,13 @@ public class Solution {
 }
 
 /**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(w);
+ * Your WordFilter object will be instantiated and called as such:
+ * WordFilter obj = new WordFilter(w);
  * int param_1 = obj.pickIndex();
  */
 
 /**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(w);
+ * Your WordFilter object will be instantiated and called as such:
+ * WordFilter obj = new WordFilter(w);
  * int param_1 = obj.pickIndex();
  */
