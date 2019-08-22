@@ -6,6 +6,7 @@ public class Solution {
     // key point, have a set to check already visited tile
     // There is a corner case that the robot can go backwards
     // so we should check all four directions
+    // the directions is tricky, it's relevant to the last direction we take
 
     public void cleanRoom(Robot robot) {
         Set<String> set = new HashSet<>();
