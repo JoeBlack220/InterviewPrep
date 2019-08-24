@@ -53,6 +53,8 @@ class Solution2 {
             max = Math.max(max, nums[i]);
         }
         int l = max, r = sum, c = 0;
+        // find the smallest candidate that we can split the subarray into m parts
+        // and every part is smaller or equal to the sum
         while(l <= r) {
             c = l + (r - l) / 2;
             if(helper(nums, c) > m) {
@@ -64,7 +66,8 @@ class Solution2 {
         }
         return l;
     }
-
+    // we use helper to find the number of splits we need if we have every split subarray has sum less or equal
+    // than candidate
     private int helper(int[] nums, int candidate) {
         int total = 0;
         int res = 1;
