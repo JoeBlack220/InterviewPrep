@@ -20,7 +20,8 @@ public class Solution {
         }
         return -1;
     }
-
+    // find the smallest index can only use the template 2 of the binary search
+    // since the mid should be include in the next search range
     public int findMinIdx(int[] nums) {
         int start = 0, end = nums.length - 1;
         while (start < end) {
