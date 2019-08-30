@@ -1,6 +1,7 @@
-package topics.String.KMP;
+package topics.String.PatternSearching.KMP;
 
 // naive KMP from Algorithms 4th edition
+// using KMP algorithm to build the dfa
 public class KMP {
     private String pat;
     private int[][] dfa;
@@ -11,6 +12,7 @@ public class KMP {
         dfa = new int[R][M];
         dfa[pat.charAt(0)][0] = 1;
         // X is the state that without the first input
+        // j is the current state
         // simulate backup in brute force
         for(int X = 0, j = 1; j < M; j++) {
             for(int c = 0; c < R; ++c) {
@@ -31,6 +33,7 @@ public class KMP {
 }
 
 // code from geeks for geeks
+// time worst case O(N)
 class KMP_String_Matching {
     void KMPSearch(String pat, String txt)
     {
