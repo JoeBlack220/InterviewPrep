@@ -49,3 +49,33 @@ class Solution2 {
         return logs;
     }
 }
+
+// solution using split
+class Solution3 {
+    public String[] reorderLogFiles(String[] logs) {
+        Arrays.sort(logs, new Comparator<String>() {
+            @Override
+            public int compare(String a, String b) {
+                String[] a_arr = a.split(" ");
+                String[] b_arr = b.split(" ");
+                boolean aIsLetter = Character.isLetter(a_arr[1].charAt(0));
+                boolean bIsLetter = Character.isLetter(b_arr[1].charAt(0));
+
+                if(!aIsLetter && !bIsLetter) return 0;
+                else if(!bIsLetter) return -1;
+                else if(!aIsLetter) return 1;
+                else {
+                    int len = Math.max(a_arr.length, b_arr.length);
+                    for(int i = 1; i < len; ++i) {
+                        if(i >= a_arr.length) return -1;
+                        if(i >= b_arr.length) return 1;
+                        int res = a_arr[i].compareTo(b_arr[i]);
+                        if(res != 0) return res;
+                    }
+                    return a_arr[0].compareTo(b_arr[0]);
+                }
+            }
+        });
+        return logs;
+    }
+}
