@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396b5702-2688-4fa9-abc6-9f0b78c3a545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/multithread/AtomicClass/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithread/CountDownLatch/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/multithread/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemdesign/general/CAPtheorem.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemdesign/general/latency.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/systemdesign/general/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topics/DynammicProgramming/l1066CampusBikesII/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topics/DynammicProgramming/l279PerfectSquares/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topics/LinkedList/l25ReverseNodesinkGroup/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multithread/AdavanceThread/ToDo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topics/Tree/l1145BinaryTreeColoringGame/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topics/Tree/l1145BinaryTreeColoringGame/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systemdesign/general/others.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/multithread/CountDownLatch/CountDownLatchDemo.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multithread/Notes.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,10 +72,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/systemdesign/general/others.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/systemdesign/general/CAPtheorem.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/topics/Math/l780ReachingPoints/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -129,12 +133,14 @@
         <option value="$PROJECT_DIR$/src/systemdesign/general/notes.txt" />
         <option value="$PROJECT_DIR$/src/systemdesign/general/latency.txt" />
         <option value="$PROJECT_DIR$/src/systemdesign/general/CAPtheorem.txt" />
+        <option value="$PROJECT_DIR$/src/topics/Math/l780ReachingPoints/Solution.java" />
+        <option value="$PROJECT_DIR$/src/systemdesign/general/others.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2047" />
-    <option name="y" value="854" />
+    <option name="x" value="1687" />
+    <option name="y" value="1031" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -156,6 +162,19 @@
               <item name="InterviewPrep" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="InterviewPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterviewPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="topics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterviewPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterviewPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="topics" type="462c0819:PsiDirectoryNode" />
+              <item name="String" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -164,6 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/multithread/CountDownLatch" />
@@ -206,15 +226,15 @@
       <option name="presentableId" value="Default" />
       <updated>1567315853510</updated>
       <workItem from="1567315862114" duration="7625000" />
-      <workItem from="1567370528172" duration="6020000" />
+      <workItem from="1567370528172" duration="8151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13645000" />
+    <option name="totallyTimeSpent" value="15776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2047" y="854" width="1400" height="1000" extended-state="0" />
+    <frame x="1687" y="1031" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -233,8 +253,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.3295063" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49926144" visible="true" weight="0.3295063" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073856" side_tool="true" visible="true" weight="0.3295063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -302,6 +322,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/systemdesign/general/CAPtheorem.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topics/Math/l780ReachingPoints/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/systemdesign/general/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -309,10 +343,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/systemdesign/general/CAPtheorem.txt">
+    <entry file="file://$PROJECT_DIR$/src/systemdesign/general/others.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,10 @@
+networks
+1.most IP networks are designed for at least a 3:1 download-speed: upload-speed ratio
+2.Read can be asynchronous, or take advantage of other performance optimizations like gzip compression or chunked transfer
+encoding, the web server can switch serve reads faster and switch between clients quickly serving many more requests
+per second than the max number of connections. Writes, on the other hand, tend to maintain an open connection for the duration for the
+upload, so uploading a 1MB file could take more than 1 second on most home networks, so that web server could only handle 500
+such simultaneous writes. A web server like Apache or lighttpd typically has an upper limit on the number of simultaneous
+connections it can maintain and in high traffic, writes can quickly consume all of those.
+database
+1.writes are generally slower than reads, even if everything is in memory or read from disks (like SSDs)
