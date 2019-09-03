@@ -6,5 +6,6 @@ per second than the max number of connections. Writes, on the other hand, tend t
 upload, so uploading a 1MB file could take more than 1 second on most home networks, so that web server could only handle 500
 such simultaneous writes. A web server like Apache or lighttpd typically has an upper limit on the number of simultaneous
 connections it can maintain and in high traffic, writes can quickly consume all of those.
+
 database
 1.writes are generally slower than reads, even if everything is in memory or read from disks (like SSDs)
