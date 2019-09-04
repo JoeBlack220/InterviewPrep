@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="396b5702-2688-4fa9-abc6-9f0b78c3a545" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/topics/DynammicProgramming/l514FreedomTrail/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/topics/DynammicProgramming/l516LongestPalindromicSubsequence/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -102,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/topics/DynammicProgramming/l516LongestPalindromicSubsequence/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="345">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -146,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/topics/Heap/l295FindMedianfromDataStream/MedianFinder.java" />
         <option value="$PROJECT_DIR$/src/topics/Greedy/l763PartitionLabels/Solution.java" />
         <option value="$PROJECT_DIR$/src/topics/DynammicProgramming/l514FreedomTrail/Solution.java" />
+        <option value="$PROJECT_DIR$/src/topics/DynammicProgramming/l516LongestPalindromicSubsequence/Solution.java" />
       </list>
     </option>
   </component>
@@ -247,18 +249,17 @@
       <workItem from="1567315862114" duration="7625000" />
       <workItem from="1567370528172" duration="8151000" />
       <workItem from="1567460549554" duration="7630000" />
-      <workItem from="1567481930025" duration="627000" />
+      <workItem from="1567481930025" duration="810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24033000" />
+    <option name="totallyTimeSpent" value="24216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="180" y="126" width="1080" height="618" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25626203" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25626203" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -275,7 +276,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49710983" visible="true" weight="0.32889733" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49710983" visible="true" weight="0.32889733" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50289017" side_tool="true" visible="true" weight="0.32889733" />
       <window_info anchor="right" id="Maven-2 Build" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -452,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/topics/DynammicProgramming/l516LongestPalindromicSubsequence/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
