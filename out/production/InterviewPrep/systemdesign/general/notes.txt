@@ -1,7 +1,0 @@
-step1: specify all the requirements, what functionality will the system has
-step2: ask for constraints, how much traffic? how much data? does latency matters? choose A or C?
-step3: how many machines we need, what kind of storage will we use
-step4: abstract design, draw the big picture, draw every component that might appear, then wait to see which part of
-the component the interviewers what you to talk into details
-step5: scale, make your system has fault tolerance
-

@@ -1,5 +1,0 @@
-using a inside class builder to build an instance instead of using the constructor
-
-this way you don't need to specify the unimportant fields that is empty
-
-the meaning is more clear
