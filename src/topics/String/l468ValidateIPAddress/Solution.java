@@ -2,6 +2,10 @@ package topics.String.l468ValidateIPAddress;
 
 // nothing interesting
 // just validate each type one by one
+// when split for ipv4, the . character must be escaped
+// add -1 as the second parameter to split to specify the minimum length of
+// the string after the processing
+// by default it's 1
 public class Solution {
     public String validIPAddress(String IP) {
         if(IP.equals("")) return "Neither";
@@ -39,5 +43,46 @@ public class Solution {
             }
         }
         return true;
+    }
+}
+
+class Solution2 {
+    public String validIPAddress(String IP) {
+        if(IPV4(IP)) return "IPv4";
+        else if(IPV6(IP)) return "IPv6";
+        else return "Neither";
+    }
+
+    private boolean IPV4(String IP) {
+        String[] arr = IP.split("\\.", -1);
+        if(arr.length != 4) return false;
+        try {
+            for(String cur: arr) {
+                if(cur.length() == 0 || (cur.length() != 1 && cur.charAt(0) == '0') || !Character.isDigit(cur.charAt(0))) return false;
+                int num = Integer.parseInt(cur);
+                if(num < 0 || num > 255) return false;
+            }
+            return true;
+        } catch(Exception e){
+            return false;
+        }
+    }
+
+    private boolean IPV6(String IP) {
+        String[] arr = IP.split(":", -1);
+        if(arr.length != 8) return false;
+        for(String cur: arr) {
+            if(cur.length() > 4 || cur.length() <= 0) return false;
+            for(char c: cur.toCharArray()) {
+                if(!validIPChar(c)) return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean validIPChar(char c) {
+        if(Character.isDigit(c)) return true;
+        if(('a' <= c && c <= 'f') || (c <= 'F' && c >= 'A')) return true;
+        return false;
     }
 }
