@@ -1,0 +1,25 @@
+Binary indexed tree can do query(a sum of a range in the original array) and update in O(logN)
+
+Every node's parent is the node with number: this node's number + this node's number's lowest bit
+
+for example:
+
+node number 1: 001 has parent 001 + 001 = 010 = 2
+node number 2: 010 has parent 010 + 010 = 100 = 4
+node number 3: 011 has parent 011 + 001 = 100 = 4
+
+root.val = sum(children.val) + num[root.id]
+
+
+from root to it's leaf (query a tree);
+i -= low bit(i) (i > 0)
+from a leaf to it's root (update a tree);
+i += low bit(i) (i <= n)
+
+how to compute low bit(n) -> n & (-n)
+
+remember, the number(id) we are talking here is 1-based, so please add 1 when create the sum array or update the arr
+
+2D version: see each row as a binary indexed tree on the original row, and each column is also a binary indexed tree on
+each column of the row-based binary indexed tree
+

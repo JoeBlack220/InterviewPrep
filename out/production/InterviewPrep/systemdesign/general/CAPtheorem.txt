@@ -1,0 +1,7 @@
+http://ksat.me/a-plain-english-introduction-to-cap-theorem/
+
+consistency
+availability
+partitioning
+we can't have those three at the same time
+

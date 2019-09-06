@@ -1,0 +1,2 @@
+indexOf is using brute force, the time complexity is m*n
+
