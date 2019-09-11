@@ -11,6 +11,7 @@ public class Solution {
         int left = 1, right = x;
         while (true) {
             int mid = left + (right - left) / 2;
+            // use x / mid instead of mid * mid to avoid overflow
             if (mid > x / mid) {
                 right = mid - 1;
             } else {
