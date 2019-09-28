@@ -31,9 +31,10 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        String test = "a(bcdefghijkl(mno)p)q";
-        System.out.println(sol.reverseParentheses(test));
+        String test = "/a/b";
+        String[] arr = test.split("/");
+        System.out.println(arr[0]);
+        System.out.println(arr.length);
     }
 }
 
