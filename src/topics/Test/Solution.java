@@ -2,38 +2,55 @@ package topics.Test;
 import java.util.*;
 import datastructure.*;
 class Solution {
-    public String reverseParentheses(String s) {
-        return helper(s, new int[]{0});
-
-    }
-
-    private String helper(String s, int[] index) {
-        boolean flag = false;
-        if(s.charAt(index[0]) == '(') {
-            index[0]++;
-            flag = true;
+    int[] uf;
+    public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
+        uf = new int[s.length()];
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        for(int i = 0; i < s.length(); ++i) {
+            uf[i] = i;
         }
-        StringBuilder sb = new StringBuilder();
-        while(index[0] < s.length() && s.charAt(index[0]) != ')') {
-            if(s.charAt(index[0]) == '(') {
-                sb.append(helper(s, index));
+        char[] arr = s.toCharArray();
+        for(List<Integer> list: pairs) {
+            union(list.get(0), list.get(1));
+        }
+        for(int i = 0; i < s.length(); ++i) {
+            int g = find(i);
+            List<Integer> l = map.computeIfAbsent(g, x -> new ArrayList<>());
+            l.add(i);
+        }
+        for(List<Integer> l: map.values()) {
+            char[] toSort = new char[l.size()];
+            int curIndex = 0;
+            for(int i: l) {
+                toSort[curIndex++] = arr[i];
             }
-            else sb.append(s.charAt(index[0]));
-
-            index[0]++;
+            Arrays.sort(toSort);
+            curIndex = 0;
+            for(int i: l) {
+                arr[i] = toSort[curIndex++];
+            }
         }
+        return new String(arr);
 
-        if(index[0] < s.length() &&s.charAt(index[0]) == ')') {
-            index[0]++;
-        }
-
-        return flag ? sb.reverse().toString() : sb.toString();
     }
 
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        String test = "a(bcdefghijkl(mno)p)q";
-        System.out.println(sol.reverseParentheses(test));
+    private int find(int x) {
+        int res = uf[x];
+        if(res != x) {
+            uf[x] = find(uf[x]);
+        }
+        return uf[x];
     }
+
+    private void union(int x, int y ) {
+        int pX = find(x);
+        int pY = find(y);
+        if(pX != pY) {
+            uf[pX] = pY;
+        }
+    }
+    public static void main(String[] args ) {
+        
+    }
+
 }
-
