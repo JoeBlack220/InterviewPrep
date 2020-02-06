@@ -42,6 +42,7 @@ public class Solution {
         return lps;
     }
 }
+
 // solution 2 built-in
 class Solution2 {
     public int strStr(String haystack, String needle) {
