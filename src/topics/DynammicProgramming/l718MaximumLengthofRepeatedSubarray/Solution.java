@@ -1,0 +1,14 @@
+package topics.DynammicProgramming.l718MaximumLengthofRepeatedSubarray;
+
+class Solution {
+    public int findLength(int[] a, int[] b) {
+        int m = a.length, n = b.length;
+        if (m == 0 || n == 0) return 0;
+        int[] dp = new int[n + 1];
+        int max = 0;
+        for (int i = m - 1; i >= 0; i--)
+            for (int j = 0; j < n; j++)
+                max = Math.max(max, dp[j] = a[i] == b[j] ? 1 + dp[j + 1] : 0);
+        return max;
+    }
+}

@@ -45,7 +45,9 @@ class Solution {
         for(int i = k; i <= len - 2 * k; ++i) {
             if(sum[left[i - k]] + sum[i] + sum[right[i + k]] > curMax) {
                 curMax = sum[left[i - k]] + sum[i] + sum[right[i + k]];
-                res = new int[]{left[i - k], i, right[i + k]};
+                res[0] = left[i - k];
+                res[1] = i;
+                res[2] = right[i + k];
             }
         }
         return res;
